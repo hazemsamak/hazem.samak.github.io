@@ -46,7 +46,7 @@ weatherApp.controller('forecastController', ['$scope', '$resource','$filter','$r
     $scope.count = $routeParams.count || '2';
     //api.openweathermap.org/data/2.5/forecast
     //http://api.openweathermap.org/data/2.5/weather
-    $scope.weatherAPI = $resource("http://api.openweathermap.org/data/2.5/forecast"
+    $scope.weatherAPI = $resource("https://api.openweathermap.org/data/2.5/forecast"
     ,     {callback: "JSON_CALLBACK"}, {get: {method: "JSONP"}}
     );
     
